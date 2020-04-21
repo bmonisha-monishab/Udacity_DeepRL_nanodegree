@@ -124,5 +124,5 @@ The best performance was achieved by DOuble DQN where the reward of +13 was achi
 
 | Double DQN                                 | DQN                                | Dueling DQN                                         |
 | ------------------------------------------ | ---------------------------------- | --------------------------------------------------- |
-| ![double-dqn](results/ddqn_new_scores.png) | ![dqn](results/dqn_new_scores.png) | ![dueling double dqn](results/Duelingddqn_new_scores.png) |
+| ![double-dqn](results/double_dqn_new_scores.png) | ![dqn](results/dqn_new_scores.png) | ![dueling double dqn](results/Duelling_dqn_new_scores.png) |
 
