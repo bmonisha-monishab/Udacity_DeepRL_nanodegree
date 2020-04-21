@@ -120,9 +120,9 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 ###  Results
 Plot showing the score per episode over all the episodes.
-The best performance was achieved by DOuble DQN where the reward of +13 was achieved in 355 episodes. 
+The best performance was achieved by Double DQN where the reward of +13 was achieved in 355 episodes. 
 
 | Double DQN                                 | DQN                                | Dueling DQN                                         |
 | ------------------------------------------ | ---------------------------------- | --------------------------------------------------- |
-| ![double-dqn](results/double_dqn_new_scores.png) | ![dqn](results/dqn_new_scores.png) | ![dueling double dqn](results/Duelling_dqn_new_scores.png) |
+| ![double-dqn](results/double_dqn_new_scores.png) | ![dqn](results/dqn_new_scores.png) | ![dueling double dqn](results/duelling_dqn_new_scores.png) |
 
