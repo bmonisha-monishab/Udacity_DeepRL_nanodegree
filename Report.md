@@ -61,6 +61,12 @@ To watch a trained smart agent, follow the instructions below:
  - DQN: If you want to run the original DQN algorithm, use the checkpoint dqn.pth for loading the trained model. Also, choose the parameter qnetwork as QNetwork while defining the agent and the parameter update_type as dqn.
  - Double DQN: If you want to run the Double DQN algorithm, use the checkpoint double_dqn.pth for loading the trained model. Also, choose the parameter qnetwork as QNetwork while defining the agent and the parameter update_type as double_dqn.
  - Dueling Double DQN: If you want to run the Dueling Double DQN algorithm, use the checkpoint duelling_dqn.pth for loading the trained model. Also, choose the parameter qnetwork as DuelingQNetwork while defining the agent and the parameter update_type as double_dqn.
+ 
+### Hyperparameters
+
+The number of training episodes was fixed at 5000. While the maximum number of timesteps per episode was fixed at 2000. These were done according to best practices, optimized parameters which give enough time for the agent to learn in an episodic manner.
+
+The epsilon-Greedy policy iteration was used to converge to the optimal policy. In keeping with the conditions of Greedy in the Limit with Infinite Exploration, the epsilon value was set to decay with time step. The starting and ending values of epsilon were however fixed to 1.0 and 0.1 respectively, so as to ensure that it does not decay to too low a value. The decay rate was set to 0.995.
 
 ### Description
  - dqn_agent.py: code for the agent used in the environment
